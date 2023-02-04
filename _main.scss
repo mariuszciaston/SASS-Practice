@@ -1,0 +1,42 @@
+@mixin bordered($width, $line, $color) {
+  border: $width $line $color;
+}
+
+main {
+   
+    p{
+        color: black;
+        font-size: 1.5rem;
+
+        // border: dashed 2px;
+
+        
+        padding: 0.5rem;
+        transition: 0.5s;
+        
+        
+        &:nth-of-type(odd){
+            @include bordered(0.1rem, dashed, black);
+        }
+
+        &:nth-of-type(even){
+            @include bordered(0.1rem, solid, black);
+}
+
+
+
+        &:hover{
+            background-color: rgba(255,255,255, 0.5);
+        }
+
+    }
+    .five{
+        filter: blur(4px);
+    }
+    
+    .five:hover{
+        filter: blur(0px);
+    }
+
+
+}

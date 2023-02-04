@@ -1,0 +1,15 @@
+footer{ 
+    background-color: grey;
+    color: $whiteVariable;
+    padding: 1rem;
+    
+    }
+    
+    div{
+        @extend footer; // Inheritance
+
+        background-color: silver;
+        color: black;
+        border-radius: 0.5rem;
+        border: 0.0625rem solid black;
+    }
